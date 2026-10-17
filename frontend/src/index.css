@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base text-ink font-body;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+::selection {
+  @apply bg-accent/20;
+}
+
+.container-x {
+  @apply max-w-7xl mx-auto px-5 md:px-8;
+}
+
+.btn-primary {
+  @apply bg-ink text-white px-5 py-2.5 rounded-full font-medium hover:bg-accent transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply border border-ink/15 text-ink px-5 py-2.5 rounded-full font-medium hover:border-ink transition-colors duration-200;
+}
+
+.input-field {
+  @apply w-full border border-ink/15 rounded-lg px-4 py-2.5 outline-none focus:border-accent transition-colors duration-200 bg-white;
+}
